@@ -1,4 +1,6 @@
-import { useCurrentLesson, useStore } from "../zustand-store";
+import { useStore } from "react-redux";
+import { useAppSelector } from "../store";
+import { useCurrentLesson } from "../store/slices/player";
 
 export function Header() {
   const { currentModule, currentLesson } = useCurrentLesson()

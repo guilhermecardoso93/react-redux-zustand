@@ -1,6 +1,7 @@
 import ReactPlayer from "react-player";
+import { useCurrentLesson } from "../store/slices/player";
 import { Loader } from "lucide-react";
-import { useCurrentLesson, useStore } from "../zustand-store";
+import { useStore } from "../zustand-store";
 
 export function PlayerVideo() {
   const { currentLesson } = useCurrentLesson();
